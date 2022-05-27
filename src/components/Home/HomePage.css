@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.homepage-header {
+  padding: 0.5em;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  margin-bottom: 1em;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.trending {
+  font-size: 1.1rem;
+  padding: 0 0.5em;
+  margin-bottom: 0.8em;
+  margin-top: 2em;
+  font-weight: 500;
+}
+.invalid-search {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #aaa5a0;
+}
+.main-container {
+  padding: 0 0.5em;
+  background-color: #f9f9f9;
+}
+.logged-user {
+  position: absolute;
+  top: 1em;
+  right: 0.6em;
+  display: flex;
+  height: 2em;
+}
+.header-login-btn {
+  background-color: red;
+  border: none;
+  outline: none;
+  padding: 0.4em 0.6em;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+}
+.link {
+  margin-left: auto;
+  margin-right: 0.5em;
+  position: absolute;
+  right: 0;
+  top: 0.5em;
+}
+.logged-username {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.fa-user-circle-o {
+  font-size: 1.1em;
+  margin-top: 0.03em;
+  margin-right: 0.1em;
+}
+
+@media (min-width: 660px) {
+  .homepage-header {
+    flex-direction: row;
+    padding: 1em;
+  }
+  .trending {
+    padding: 0.7em;
+    font-size: 1.5rem;
+    margin-bottom: -0.5em;
+    margin-top: 0;
+  }
+  .invalid-search {
+    font-size: 2rem;
+  }
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    justify-content: space-between;
+  }
+  .main-container::after {
+    content: "";
+    width: 32%;
+  }
+  .logged-user {
+    top: 1.5em;
+    right: 1.1em;
+  }
+  .link {
+    top: 1.2em;
+    right: 0.5em;
+  }
+}

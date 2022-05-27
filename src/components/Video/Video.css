@@ -1,0 +1,41 @@
+.video-conatainer {
+  margin-bottom: 2em;
+}
+
+.image {
+  min-width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 5px;
+}
+
+.video-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-bottom: 0.25em;
+}
+.channel-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: #aaa5a0;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 660px) {
+  .video-conatainer {
+    width: 32%;
+  }
+  .image {
+    max-width: 100%;
+  }
+}
+@media (min-width: 900px) {
+  .video-conatainer {
+    width: 19%;
+  }
+}
